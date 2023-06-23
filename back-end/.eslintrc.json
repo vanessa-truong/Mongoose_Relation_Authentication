@@ -4,9 +4,14 @@
     "node": true
   },
   "extends": "eslint:recommended",
+  "parser": "@babel/eslint-parser",
   "parserOptions": {
     "ecmaVersion": "latest",
-    "sourceTyp": "module"
+    "sourceTyp": "module",
+    "requireConfigFile": false,
+    "babelOptions": {
+      "plugins": ["@babel/plugin-syntax-imporot-assertions"]
+    }
   },
   "rules": {}
 }
